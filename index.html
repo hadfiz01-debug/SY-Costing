@@ -570,7 +570,7 @@ function getInfoNum(keys){
 
 function renderBenchmarks(){
   const sqft = getInfoNum(['Total Floor Area (sqft)','Floor Area','Sqft','Total Sqft','Area']);
-  const pax  = getInfoNum(['Pax Capacity','Seating Capacity','Pax','Total Pax','Seats','Capacity']);
+  const pax  = getInfoNum(['Number of Seats','Pax Capacity','Seating Capacity','Pax','Total Pax','Seats','Capacity']);
   const totalCost = state.costRecords.reduce((s,r)=>s+r.Cost,0);
 
   // Floor area card
